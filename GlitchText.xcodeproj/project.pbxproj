@@ -11,9 +11,7 @@
 		AD9E533D2C27FC620042837E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E533C2C27FC620042837E /* ContentView.swift */; };
 		AD9E533F2C27FC650042837E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9E533E2C27FC650042837E /* Assets.xcassets */; };
 		AD9E53422C27FC650042837E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9E53412C27FC650042837E /* Preview Assets.xcassets */; };
-		AD9E534C2C27FC650042837E /* GlitchTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E534B2C27FC650042837E /* GlitchTextTests.swift */; };
-		AD9E53562C27FC650042837E /* GlitchTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E53552C27FC650042837E /* GlitchTextUITests.swift */; };
-		AD9E53582C27FC650042837E /* GlitchTextUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E53572C27FC650042837E /* GlitchTextUITestsLaunchTests.swift */; };
+		AD9E53662C27FCC70042837E /* GlitchText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E53652C27FCC70042837E /* GlitchText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +38,8 @@
 		AD9E533E2C27FC650042837E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD9E53412C27FC650042837E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD9E53472C27FC650042837E /* GlitchTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlitchTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD9E534B2C27FC650042837E /* GlitchTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchTextTests.swift; sourceTree = "<group>"; };
 		AD9E53512C27FC650042837E /* GlitchTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlitchTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD9E53552C27FC650042837E /* GlitchTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchTextUITests.swift; sourceTree = "<group>"; };
-		AD9E53572C27FC650042837E /* GlitchTextUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchTextUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD9E53652C27FCC70042837E /* GlitchText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				AD9E53392C27FC620042837E /* GlitchText */,
-				AD9E534A2C27FC650042837E /* GlitchTextTests */,
-				AD9E53542C27FC650042837E /* GlitchTextUITests */,
 				AD9E53382C27FC620042837E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +88,7 @@
 		AD9E53392C27FC620042837E /* GlitchText */ = {
 			isa = PBXGroup;
 			children = (
+				AD9E53642C27FCBC0042837E /* Helpers */,
 				AD9E533A2C27FC620042837E /* GlitchTextApp.swift */,
 				AD9E533C2C27FC620042837E /* ContentView.swift */,
 				AD9E533E2C27FC650042837E /* Assets.xcassets */,
@@ -110,21 +105,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AD9E534A2C27FC650042837E /* GlitchTextTests */ = {
+		AD9E53642C27FCBC0042837E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				AD9E534B2C27FC650042837E /* GlitchTextTests.swift */,
+				AD9E53652C27FCC70042837E /* GlitchText.swift */,
 			);
-			path = GlitchTextTests;
-			sourceTree = "<group>";
-		};
-		AD9E53542C27FC650042837E /* GlitchTextUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AD9E53552C27FC650042837E /* GlitchTextUITests.swift */,
-				AD9E53572C27FC650042837E /* GlitchTextUITestsLaunchTests.swift */,
-			);
-			path = GlitchTextUITests;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9E533D2C27FC620042837E /* ContentView.swift in Sources */,
+				AD9E53662C27FCC70042837E /* GlitchText.swift in Sources */,
 				AD9E533B2C27FC620042837E /* GlitchTextApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9E534C2C27FC650042837E /* GlitchTextTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9E53582C27FC650042837E /* GlitchTextUITestsLaunchTests.swift in Sources */,
-				AD9E53562C27FC650042837E /* GlitchTextUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
